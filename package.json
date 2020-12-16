@@ -1,0 +1,24 @@
+{
+  "name": "bucket-list-mevn",
+  "version": "1.0.0",
+  "description": "mevn app test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davoudnasrabadi/bucket-list-mevn.git"
+  },
+  "keywords": [
+    "test",
+    "app",
+    "mevn"
+  ],
+  "author": "Davoud Nasrabadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davoudnasrabadi/bucket-list-mevn/issues"
+  },
+  "homepage": "https://github.com/davoudnasrabadi/bucket-list-mevn#readme"
+}
