@@ -5,9 +5,11 @@ const {PORT,mongoUri} = require('./config');
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const bucketListItemsRoutes = require('./routes/api/bucketListItems');
 app.use(cors());
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
+app.use('/api/bucketListItems',bucketListItemsRoutes);
 mongoose
 .connect(mongoUri,{
     useNewUrlParser:true,

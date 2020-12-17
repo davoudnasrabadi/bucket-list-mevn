@@ -5,7 +5,7 @@
  router.get('/',async(req,res)=>{
    try{
     const bucketListItems = await BucketListItem.find();
-    if(!bucketListItem){
+    if(!bucketListItems){
         throw new Error('no bucketListItems');
     }
     const sorted = bucketListItems.sort((a,b)=>{
@@ -48,6 +48,7 @@
         const {id} = req.params;
         const removed = await BucketListItem.findByIdAndDelete(id);
         if(!removed) throw Error('Something went wrong in deleting item');
+        res.status(200).json(removed);
      }
      catch(err){
          res.status(500).json({message:err.message});
